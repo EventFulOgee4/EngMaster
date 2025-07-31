@@ -31,3 +31,7 @@ header.main-header > img {
 section.quick-description {
   margin-left: 40px;
 }
+
+section.quick-description > h2 {
+  font-size: 40px;
+}
