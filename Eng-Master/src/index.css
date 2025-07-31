@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background-color: #FAFAF8;
+    font-family: "Bitcount", Arial, sans-serif;
+}
+
+header.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(176, 176, 26);
+}
