@@ -129,4 +129,10 @@ section.get-project > button {
 
 section.get-project > button:hover {
   transform: scale(1.1);
-} 
+}
+
+section.project-setup-container {
+  margin-top: 50px;
+  margin-left: 100px;
+  color: #ffffff;
+}
