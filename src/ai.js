@@ -1,5 +1,4 @@
 import Anthropic from "@anthropic-ai/sdk"
-import { HfInference } from '@huggingface/inference'
 const anthropic_key = import.meta.env.VITE_ANTHROPIC_API_KEY
 
 const SYSTEM_PROMPT = `
