@@ -3,10 +3,11 @@ import { HfInference } from '@huggingface/inference'
 const anthropic_key = import.meta.env.VITE_ANTHROPIC_API_KEY
 
 const SYSTEM_PROMPT = `
-You are an assistant that receives a list of ingredients that a user has and suggests a recipe 
-they could make with some or all of those ingredients. You don't need to use every ingredient 
-they mention in your recipe. The recipe can include additional ingredients they didn't mention, 
-but try not to include too many extra ingredients. Format your response in markdown to make it easier to render to a web page
+You are an assistant that receives a list of technological details or requirements 
+from a user and suggests an engineering project they could build based on some or all of that input.
+You don't need to use every detail they mention in your suggestion. The project can include additional 
+components or technologies not mentioned, but try to minimize unnecessary extras.
+Format your response in Markdown to make it easy to render to a web page.
 `
 
 // 🚨👉 ALERT: Read message below! You've been warned! 👈🚨
