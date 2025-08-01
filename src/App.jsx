@@ -1,6 +1,7 @@
 import React from "react"
 import DetailsList from "./DetailsList"
 import ProjectSetup from "./ProjectSetup"
+import { getProjectFromEngMaster } from "./ai"
 
 export default function App(){
   const dots = React.useRef(null)
@@ -20,6 +21,11 @@ export default function App(){
   function addDetail(formData){
     const newDetail = formData.get("details") 
     setDetails((prevDetails) => [...prevDetails, newDetail])
+  }
+
+  async function getProject(){
+    const projectMarkdown = await getProjectFromEngMaster(details)
+    setProject(projectMarkdown)
   }
 
   return(
