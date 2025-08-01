@@ -5,6 +5,7 @@ import { getProjectFromEngMaster } from "./ai"
 
 export default function App(){
   const dots = React.useRef(null)
+  const proj = React.useRef(null)
   const [details, setDetails] = React.useState([])
   const [project, setProject] = React.useState("")
   const detailsList = details.map((detail) => {
@@ -16,7 +17,10 @@ export default function App(){
     dots.current.textContent = dotLine.repeat(100)
   }, [])
 
-
+  React.useEffect(() => {
+    (project !== "" && proj.current !== null) && 
+    proj.current.scrollIntoView({behavior: "smooth"})
+  }, [project])
 
   function addDetail(formData){
     const newDetail = formData.get("details") 
@@ -50,7 +54,7 @@ export default function App(){
         details = {details}
         getProject = {getProject}
         />
-        {project && <ProjectSetup project = {project} />}
+        {project && <ProjectSetup proj = {proj} project = {project} />}
       </main>
     </>
   )
