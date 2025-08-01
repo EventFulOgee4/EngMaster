@@ -10,7 +10,7 @@ export default function DetailsList(props){
                         <h2>Your project is ready!</h2>
                         <p>To see the project offered just press the following button button &#128073;</p>
                     </div>
-                    <button>Get Project</button>
+                    <button onClick={props.getProject}>Get Project</button>
                 </section>
             }
             
