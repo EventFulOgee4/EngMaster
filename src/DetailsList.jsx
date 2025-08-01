@@ -4,13 +4,16 @@ export default function DetailsList(props){
             <ul className="details-list" aria-live="polite">
                 {props.detailsList}
             </ul>
-            <section className="get-project">
-                <div>
-                    <h2>Your project is ready!</h2>
-                    <p>To see the project offered just press the following button button &#128073;</p>
-                </div>
-                <button>Get Project</button>
-            </section>
+            { props.details.length > 4 &&
+                <section className="get-project">
+                    <div>
+                        <h2>Your project is ready!</h2>
+                        <p>To see the project offered just press the following button button &#128073;</p>
+                    </div>
+                    <button>Get Project</button>
+                </section>
+            }
+            
         </>
         
     )
