@@ -1,9 +1,17 @@
 export default function DetailsList(props){
     return(
-        <section className="details-list">
-             <ul className="details-list" aria-live="polite">
+        <>
+            <ul className="details-list" aria-live="polite">
                 {props.detailsList}
-             </ul>
-        </section>
+            </ul>
+            <section className="get-project">
+                <div>
+                    <h2>Your project is ready!</h2>
+                    <p>To see the project offered just press the following button button &#128073;</p>
+                </div>
+                <button>Get Project</button>
+            </section>
+        </>
+        
     )
 }
