@@ -48,6 +48,7 @@ export default function App(){
         <DetailsList 
         detailsList = {detailsList}
         details = {details}
+        getProject = {getProject}
         />
         {project && <ProjectSetup project = {project} />}
       </main>
