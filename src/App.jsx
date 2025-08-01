@@ -13,7 +13,7 @@ export default function App(){
 
   React.useEffect(() => {
     const dotLine = ".".repeat(200) + "\n"
-    dots.current.textContent = dotLine.repeat(53)
+    dots.current.textContent = dotLine.repeat(100)
   })
 
 
