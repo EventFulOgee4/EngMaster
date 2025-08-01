@@ -55,7 +55,7 @@ main > section.input-field {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 main > section.input-field > input {
@@ -69,4 +69,24 @@ main > section.input-field > input {
 main > section.input-field > input::placeholder {
   font-family: "Bitcount", Arial, sans-serif;
   font-size: 1.2rem;
+}
+
+main > section.input-field > button {
+  padding: 17px;
+  border: 2px black solid;
+  border-radius: 10px;
+  margin-block: 0 auto;
+  width: 150px;
+  font-family: "Bitcount", Arial, sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+main > section.input-field > button:hover {
+  box-shadow: 0 0 5px #b0b01a,
+              0 0 10px #b0b01a,
+              0 0 20px #b0b01a;
+  transform: scale(1.1);
+  background-color: #3d3d3d;
 }
