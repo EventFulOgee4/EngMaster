@@ -2,6 +2,7 @@ import React from "react"
 import DetailsList from "./DetailsList"
 import ProjectSetup from "./ProjectSetup"
 import { getProjectFromEngMaster } from "./ai"
+import ParticlesComponent from "./Particles"
 
 export default function App(){
   const dots = React.useRef(null)
@@ -11,11 +12,6 @@ export default function App(){
   const detailsList = details.map((detail) => {
     return <li key={detail}>{detail}</li>
   })
-
-  React.useEffect(() => {
-    const dotLine = ".".repeat(200) + "\n"
-    dots.current.textContent = dotLine.repeat(100)
-  }, [])
 
   React.useEffect(() => {
     (project !== "" && proj.current !== null) && 
@@ -34,6 +30,7 @@ export default function App(){
 
   return(
     <>
+      <ParticlesComponent id = "particles" />
       <div className="background" ref={dots}></div>
       <header className="main-header">
         <img src="images/gear-icon.svg" alt="gear-icon" />
