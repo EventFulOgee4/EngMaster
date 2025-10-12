@@ -10,6 +10,13 @@ body {
     background-color: #3d3d3d;
 }
 
+#particles{
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 div.background {
     content: "";
     position: absolute;
@@ -22,7 +29,6 @@ div.background {
     line-height: 14px;
     color: rgba(0, 0, 0, 0.1); /* Adjust dot visibility */
     pointer-events: none;
-    z-index: -1;
 }
 
 header.main-header {
